@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- A web app that will help DMs keep track of how many days, hours, etc. that the players spend in a dungeon, like Dungeon of the Mad Mage -->
+<html lang="end">
+    <head>
+        <title>Rammy's Dungeon Timer</title>
+        <link rel="stylesheet" href="rdt_style.css"> <!-- CSS Stylesheet-->
+    </head>
+    <body>
+        <!-- left of the display is instructions and references for time -->
+        <div id="inst_ref">
+            <h1>Thank you for using Rammy's Dungeon Timer<br />
+            Curious how to use it? Follow the instructions below.</h1>
+            <p>Here are some instructions. idk.</p>
+            <h2>Common timeblocks:</h2>
+            <p>Movement:</p>
+            <p>Short Discussion:</p>
+            <p>Long Discussion:</p>
+            <p>Battle:</p>
+            <p>Investigate/Clear a Room:</p>
+            <p>Short Rest:</p>
+            <p>Long Rest:</p>
+        </div>
+
+        <!-- This displays how much time has passed in days, hours, and minutes-->
+        <div id="display">
+            <h2>Your party has been exploring for:</h2>
+            <h1><span id="days"></span> days, <span id="hours"></span> hours, and <span id="mins"></span> minutes.</h1>
+        </div>
+
+        <!-- Below the display is a reset button with a confirmation pop-up -->
+
+        <!-- here lies the buttons for easy tracking on the right of the display -->
+        <!-- 5 min -->
+        <div class="button" id="5min">5 Minutes</div>
+
+        <!-- 10 min -->
+        <div class="button" id="10min">10 Minutes</div>
+
+        <!-- 15 min -->
+        <div class="button" id="15min">15 Minutes</div>
+
+        <!-- 30 min -->
+        <div class="button" id="30min">30 Minutes</div>
+
+        <!-- 45 min -->
+        <div class="button" id="45min">45 Minutes</div>
+
+        <!-- 1 hour -->
+        <div class="button" id="1hr">1 Hour</div>
+
+        <!-- 8 hours -->
+        <div class="button" id="8hr">8 Hours</div>
+
+        <!-- 12 hours -->
+        <div class="button" id="12hr">12 Hours</div>
+
+        <!-- 1 day -->
+        <div class="button" id="1day">1 Day</div>
+
+        <!-- The ability to add a custom time -->
+        <!-- form-fillable with boxes for minutes and hours -->
+        <div id="custom">
+        <div class="form-fillable" id="days"></div>
+        <div class="form-fillable" id="hours"></div>
+        <div class="form-fillable" id="minutes"></div>
+        <div class="button" id="enter"></div>
+        </div>
+
+
+        <!-- JS referenced here. -->
+        <script src="rdt_script.js"></script> 
+    </body>
+</html>
