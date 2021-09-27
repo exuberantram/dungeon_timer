@@ -9,6 +9,8 @@
 - Add button functionality
 - Add a reset button to wipe the variables from the counter
 
+![A sketch of how I want the layout to look, vaguely](https://github.com/exuberantram/dungeon_timer/blob/master/rdt_sketch.jpeg)
+
 ## Nice-To-Haves:
 - Save functionality for breaks in-between sessions
 - Add functionality to save previous times (Helps keep track of how long it takes to navigate areas commonly returned to)
