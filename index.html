@@ -8,28 +8,35 @@
     <body>
         <!-- left of the display is instructions and references for time -->
         <div id="inst_ref">
-            <h1>Thank you for using Rammy's Dungeon Timer<br />
-            Curious how to use it? Follow the instructions below.</h1>
+            <h1>Rammy's Dungeon Timer</h1>
             <p>Here are some instructions. idk.</p>
             <h2>Common timeblocks:</h2>
-            <p>Movement:</p>
-            <p>Short Discussion:</p>
-            <p>Long Discussion:</p>
-            <p>Battle:</p>
-            <p>Investigate/Clear a Room:</p>
-            <p>Short Rest:</p>
-            <p>Long Rest:</p>
+            <p>Movement:<br />
+            Slow pace: <br/>
+            Moderate Pace: <br />
+            Fast Pace: </p>
+            <p>Short Discussion: 5 Minutes</p>
+            <p>Long Discussion: 10 Minutes</p>
+            <p>Battle: 1 Minute</p>
+            <p>Investigate/Clear a Room: 10 Minutes</p>
+            <p>Short Rest: 30 Minutes</p>
+            <p>Long Rest: 8 Hours</p>
+            <p>Long Rest with 3 Watch Shifts: 12 Hours</p>
         </div>
 
         <!-- This displays how much time has passed in days, hours, and minutes-->
         <div id="display">
             <h2>Your party has been exploring for:</h2>
-            <h1><span id="days"></span> days, <span id="hours"></span> hours, and <span id="mins"></span> minutes.</h1>
+            <h1><span id="days"></span> days,<br /> <span id="hours"></span> hours,<br /> and <span id="mins"></span> minutes.</h1>
         </div>
 
         <!-- Below the display is a reset button with a confirmation pop-up -->
 
         <!-- here lies the buttons for easy tracking on the right of the display -->
+        <div id="buttonbar">
+        <!-- 1 min -->
+        <div class="button" value=1 id="1min">1 Minute</div>
+
         <!-- 5 min -->
         <div class="button" id="5min">5 Minutes</div>
 
@@ -65,6 +72,8 @@
         <div class="form-fillable" id="minutes"></div>
         <div class="button" id="enter">Enter Custom Time</div>
         </div> -->
+
+        </div>
 
 
         <!-- JS referenced here. -->
