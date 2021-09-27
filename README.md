@@ -1,6 +1,6 @@
 # Rammy's Dungeon Timer
 ## This timer is a way to track how long your players spend moving, fighting, and exploring in a dungeon. 
-### I was mostly tired of using OneNote to try my best to keep track of this while DMing a Dungeon of the Mad Mage campaign. 
+### I was mostly tired of using OneNote to try my best to keep track of this while DMing a Dungeon of the Mad Mage campaign. It's meant to be purely functional, so for now it won't be pretty.
 ### This is an excellent exercise for me to learn more about variables in JS and bringing it back to HTML
 
 ## So Far, the plan is:
