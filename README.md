@@ -6,8 +6,8 @@
 ## So Far, the plan is:
 - Make the layout: left is instructions, right is buttons to ease of adding, and the center displays total time
 - Layout Buttons vertically
-- Add button functionality
-- Add a reset button to wipe the variables from the counter
+- ~~Add button functionality~~
+- ~~Add a reset button to wipe the variables from the counter~~
 
 ![A sketch of how I want the layout to look, vaguely](https://github.com/exuberantram/dungeon_timer/blob/master/rdt_sketch.jpeg)
 
