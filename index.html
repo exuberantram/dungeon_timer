@@ -3,12 +3,13 @@
 <html lang="end">
     <head>
         <title>Rammy's Dungeon Timer</title>
-        <link rel="stylesheet" href="rdt_style.css"> <!-- CSS Stylesheet-->
+        <!-- CSS Stylesheet-->
+        <link rel="stylesheet" href="rdt_style.css"> 
     </head>
     <body>
         <!-- left of the display is instructions and references for time -->
         <div id="inst_ref">
-            <h1>Rammy's Dungeon Timer</h1>
+            <h1>Rammy's Dungeon Timer</h1> <!-- nice to have: stacked with a logo lockup on the right -->
             <p>Here are some instructions. idk.</p>
             <h2>Common timeblocks:</h2>
             <p>Movement:<br />
@@ -25,44 +26,48 @@
         </div>
 
         <!-- This displays how much time has passed in days, hours, and minutes-->
-        <div id="display">
-            <h2>Your party has been exploring for:</h2>
-            <h1><span id="days"></span> days,<br /> <span id="hours"></span> hours,<br /> and <span id="mins"></span> minutes.</h1>
-        </div>
+        <div class="calculator"> <!-- both display and buttonbar need to be in the same div for JS purposes (I believe) -->
+            <div id="display">
+                <h2>Your party has been exploring for:</h2>
+                <h1><span id="days">0</span> days,<br /> <span id="hours">0</span> hours,<br /> and <span id="mins">0</span> minutes.</h1>
 
-        <!-- Below the display is a reset button with a confirmation pop-up -->
+                <button type="button" onclick="resetTime()">Reset?</button>
+            </div>
 
-        <!-- here lies the buttons for easy tracking on the right of the display -->
-        <div id="buttonbar">
-        <!-- 1 min -->
-        <div class="button" value=1 id="1min">1 Minute</div>
+            <!-- Below the display is a reset button with a confirmation pop-up -->
 
-        <!-- 5 min -->
-        <div class="button" id="5min">5 Minutes</div>
+            <!-- here lies the buttons for easy tracking on the right of the display -->
+            <!-- function addTheValue should parseInt the values-->
+            <div id="buttonbar">
+            <!-- 1 min -->
+                <button type="button" onclick="addTheValueMin(1)">1 Minute</button>
 
-        <!-- 10 min -->
-        <div class="button" id="10min">10 Minutes</div>
+            <!-- 5 min -->
+                <button type="button" onclick="addTheValueMin(5)">5 Minutes</button>
 
-        <!-- 15 min -->
-        <div class="button" id="15min">15 Minutes</div>
+            <!-- 10 min -->
+                <button type="button" onclick="addTheValueMin(10)">10 Minutes</button>
 
-        <!-- 30 min -->
-        <div class="button" id="30min">30 Minutes</div>
+            <!-- 15 min -->
+                <button type="button" onclick="addTheValueMin(15)">15 Minutes</button>
 
-        <!-- 45 min -->
-        <div class="button" id="45min">45 Minutes</div>
+            <!-- 30 min -->
+                <button type="button" onclick="addTheValueMin(30)">30 Minutes</button>
 
-        <!-- 1 hour -->
-        <div class="button" id="1hr">1 Hour</div>
+            <!-- 45 min -->
+                <button type="button" onclick="addTheValueMin(45)">45 Minutes</button>
 
-        <!-- 8 hours -->
-        <div class="button" id="8hr">8 Hours</div>
+            <!-- 1 hour -->
+                <button type="button" onclick="addTheValueHour(1)">1 Hour</button>
 
-        <!-- 12 hours -->
-        <div class="button" id="12hr">12 Hours</div>
+            <!-- 8 hours -->
+                <button type="button" onclick="addTheValueHour(8)">8 Hours</button>
 
-        <!-- 1 day -->
-        <div class="button" id="1day">1 Day</div>
+            <!-- 12 hours -->
+                <button type="button" onclick="addTheValueHour(12)">12 Hours</button>
+
+            <!-- 1 day -->
+                <button type="button" onclick="addTheValueDay(1)">1 Day</button>
 
         <!-- The ability to add a custom time -->
         <!-- form-fillable with boxes for minutes and hours -->
@@ -70,10 +75,11 @@
         <div class="form-fillable" id="days"></div>
         <div class="form-fillable" id="hours"></div>
         <div class="form-fillable" id="minutes"></div>
-        <div class="button" id="enter">Enter Custom Time</div>
-        </div> -->
+        <button type="button" id="enter">Enter Custom Time</div>
+        </button> -->
 
-        </div>
+            </div> <!-- end buttonbar class -->
+        </div> <!-- end calculator class -->
 
 
         <!-- JS referenced here. -->
