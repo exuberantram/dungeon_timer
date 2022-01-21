@@ -20,3 +20,7 @@
 - Ability to add custom times
 - Make it pretty (add/create a logo, make numbers centered and larger, etc)
 - Add examples/common timeblocks on hover over buttons
+
+## Eventually...
+-Build this in Java
+-Make executable file
