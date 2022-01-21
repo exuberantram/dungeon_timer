@@ -22,5 +22,5 @@
 - Add examples/common timeblocks on hover over buttons
 
 ## Eventually...
--Build this in Java
--Make executable file
+- Build this in Java
+- Make executable file
